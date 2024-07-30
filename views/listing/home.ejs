@@ -1,0 +1,25 @@
+<% layout("/layouts/boilerplate") %>
+
+<!-- <h2>Welcome to AirBnB Lite</h2> -->
+
+<div class="row justify-content-center row-cols-sm-2">
+  <% for(let listing of allListing) { %>
+  <div class="card border-0" style="width: 20rem">
+    <img
+      class="card-img-top"
+      src="<%=listing.image.url%>"
+      alt="listing-image"
+    />
+    <div class="card-body">
+      <h5 class="card-title"><%= listing.title %></h5>
+      <p class="card-text listing-desc"><%= listing.description %></p>
+      <p class="card-text">
+        &#8377;<%=listing.price.toLocaleString("en-IN")%> / Night
+      </p>
+      <a href="/listings/<%=listing._id%>" class="btn btn-primary">
+        Go To Display</a
+      >
+    </div>
+  </div>
+  <% } %>
+</div>

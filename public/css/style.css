@@ -1,0 +1,87 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.card {
+  border-radius: 1rem !important;
+  margin: 1.5rem;
+}
+  
+.card-body {
+  padding: 1.25rem 0 0 0 !important;
+}
+
+.card-img-top {
+  object-fit: fill !important;
+  width: 100% !important;
+  height: 16rem;
+  border-radius: 1rem !important;
+}
+
+.listing-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fa-airbnb {
+  font-size: 2rem;
+  color: #fe424d !important;
+}
+
+.navbar-brand span {
+  font-size: 1.5rem;
+  color: #fe424d;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #fe424d !important;
+}
+
+.show-img {
+  height: 30vh;
+}
+
+footer {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+
+.f-link-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-support-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-link {
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-link:hover {
+  text-decoration: underline;
+  color: #222222;
+}
+
+.f-link-header {
+  font-weight: bold;
+}
